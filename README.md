@@ -82,4 +82,4 @@ my approach.
 
 Secondly changing the predictions mid season based on how many opponents are
 still left in the game. If fewer opponents are left a shorter term approach
-makes more sense and the opposite if more opponents are left.
+makes more sense and the opposite if more opponents are left the opposite.
