@@ -44,7 +44,7 @@ until it can no longer find an improvement. This won't always find the absolute
 best first n but it'll be pretty close (it could find a local max).
 
 In order to help determine the best value of n I simulated the opponents against each
-other in opponents_simulation.py. I used 1 traditional greedy algorithm, 5 copies of 
+other in opponents_simulations.py. I used 1 traditional greedy algorithm, 5 copies of 
 the greedy variant with n=3 and 3 copies of the proportional strat. I kept track of 
 the gamelength and winners for each run producing these two graphs:
 
