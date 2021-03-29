@@ -1,3 +1,4 @@
+from matplotlib import pyplot as plt
 import numpy as np
 import pandas as pd
 
@@ -32,4 +33,20 @@ for i in range(num):
                     still_in[j] = 0
         rnum += 1
     gamelengths[sim] = rnum
-    winners[sim] = last_round
+    winners[sim] = last_round / sum(last_round)
+gl, freq = np.unique(gamelengths, return_counts=True)
+values = sum(winners)
+plt.bar(gl, freq / num)
+plt.xlabel('Gamelength')
+plt.ylabel('Percentage of Games')
+plt.savefig('Gamelengths.png')
+plt.show()
+barplot = plt.bar(np.arange(9), 90 * values / num)
+barplot[0].set_color('r')
+for i in [6, 7, 8]:
+    barplot[i].set_color('g')
+plt.xlabel('Opponent Stratergy Number')
+plt.ylabel('Value from £10 Entry (£)')
+plt.savefig('OpponentStratValues.png')
+plt.show()
+
