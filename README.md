@@ -28,8 +28,8 @@ that they haven't already chosen. Hence for n=1 this is just the greedy
 algorithm.
 
 The second is more random. The opponents chose between the teams they haven't
-already chosen with probabilities proportional to that teams win probability
-for the week. This is therefore just slightly better than chosing teams
+already chosen with probabilities proportional to the probabilities of the teams
+winning that week. This is therefore just slightly better than chosing teams
 completely at random.
 
 After creating the opponents strategies I decided the general approach for my
@@ -51,7 +51,7 @@ the gamelength and winners for each run producing these two graphs:
 
 <img src= "https://github.com/PJF98/FootballSurvivor/blob/main/Gamelengths.png"/>
 
-<img src= "https://github.com/PJF98/FootballSurvivor/blob/main/OpponentsStratValues.png"/>
+<img src= "https://github.com/PJF98/FootballSurvivor/blob/main/OpponentStratValues.png"/>
 
 From this I found that the mean number of rounds survived by the best opponent
 is 5.6 and the mode number is 5. It's also clear that the traditional greedy
@@ -68,3 +68,5 @@ To conclude my strategy is to optimise the probability of surviving for the
 first 5 weeks and then fill in the rest of the predictions with the greedy
 algorithm. As can be seen in the following graph the expected value of this
 strategy against these opponents is approximately £15.2.
+
+<img src= "https://github.com/PJF98/FootballSurvivor/blob/main/FullValues.png"/>
