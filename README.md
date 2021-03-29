@@ -59,7 +59,7 @@ is 5.6 and the mode number is 5. It's also clear that the traditional greedy
 algorithm is the best and should be the benchmark to beat for my algorithm.
 
 I then coded up my algorithm in predictions.py (which contains the opponents
-algorithms are also). The full simulation is in full_simulation.py. I found
+algorithms also). The full simulation is in full_simulation.py. I found
 several values of n for my algorithm where beating the greedy algorithm with
 n=6 being the best (I tried 10,000 runs with n = 3,4,5,6,7). For the full simulation
 I also decided to chose to randomise the weeks which were used each time in case 
