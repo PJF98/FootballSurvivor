@@ -60,12 +60,12 @@ algorithm is the best and should be the benchmark to beat for my algorithm.
 I then coded up my algorithm in predictions.py (which contains the opponents
 algorithms are also). The full simulation is in full_simulation.py. I found
 several values of n for my algorithm where beating the greedy algorithm with
-n=5 being the best (I tried 10,000 runs with n = 3,4,5,6). For the full simulation
+n=6 being the best (I tried 10,000 runs with n = 3,4,5,6,7). For the full simulation
 I also decided to chose to randomise the weeks which were used each time in case 
 the greedy algorithm was particularly good on the first 20 weeks for example.
 
 To conclude my strategy is to optimise the probability of surviving for the
-first 5 weeks and then fill in the rest of the predictions with the greedy
+first 6 weeks and then fill in the rest of the predictions with the greedy
 algorithm. As can be seen in the following graph the expected value of this
 strategy against these opponents is approximately £15.2.
 

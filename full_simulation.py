@@ -16,7 +16,7 @@ for i in range(num):
     fixtures, probs = create_matrices(df, random=True)
     rankings = np.argsort(-probs)
     all_preds = np.zeros([10, 20], dtype=int)
-    all_preds[0] = my_preds(probs, rankings, survivefor=7)
+    all_preds[0] = my_preds(probs, rankings, survivefor=6)
     all_preds[1] = opponent_preds(probs, rankings, num=1)
     for i in np.arange(5) + 2:
         all_preds[i] = opponent_preds(probs, rankings)
