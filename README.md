@@ -66,7 +66,19 @@ the greedy algorithm was particularly good on the first 20 weeks for example.
 
 To conclude my strategy is to optimise the probability of surviving for the
 first 6 weeks and then fill in the rest of the predictions with the greedy
-algorithm. As can be seen in the following graph the expected value of this
-strategy against these opponents is approximately £15.2.
+algorithm. As can be seen in the following graph (the black bar) the expected value of this
+strategy against these opponents is approximately £15.
 
 <img src= "https://github.com/PJF98/FootballSurvivor/blob/main/FullValues.png"/>
+
+Possible Improvements:
+
+In order to improve my approach further given more time I have 2 main ideas:
+
+Firstly a better objective functions. A combination of the survival
+probabilities after each round which could then be optimised would help improve
+my approach.
+
+Secondly changing the predictions mid season based on how many opponents are
+still left in the game. If fewer opponents are left a shorter term approach
+makes more sense and the opposite if more opponents are left.
