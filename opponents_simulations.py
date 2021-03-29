@@ -49,4 +49,3 @@ plt.xlabel('Opponent Stratergy Number')
 plt.ylabel('Value from £10 Entry (£)')
 plt.savefig('OpponentStratValues.png')
 plt.show()
-
